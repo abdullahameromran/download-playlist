@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+            width: calc(100% - 22px);
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+        input[type="submit"]:active {
+            background-color: #004494;
+            transform: scale(0.98);
+        }
+        #progress {
+            margin-top: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        #progress .status-icon {
+            font-size: 24px;
+        }
+        .success .status-icon {
+            color: #28a745;
+        }
+        .error .status-icon {
+            color: #dc3545;
+        }
+        .info .status-icon {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Video Downloader</h1>
+        <form id="form">
+            <input type="text" id="url" name="url" placeholder="Enter YouTube URL" required>
+            <input type="submit" value="Download">
+            <div id="progress" class="info">
+                <span class="status-icon">ℹ️</span>
+                <span id="progress-text">Enter a URL and click "Download"</span>
+            </div>
+        </form>
+    </div>
+
+    <script src="././/">
+       
+    </script>
+</body>
+</html>
